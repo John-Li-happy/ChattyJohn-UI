@@ -8,8 +8,11 @@ I built this to memerize the days when I was young
 
 ## Technique 
 Model-View-ViewModel(MVVM)
+
 Observation
+
 Delegation
+
 Machine Learning
 
 ## Todos

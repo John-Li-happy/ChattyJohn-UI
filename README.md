@@ -2,16 +2,18 @@
 A chatty robot designed for memorial days when I was young
 
 ## Discription
-Back in colledge, I took part in "mechine learning" developing program, and "chatterBot" was one of our topics. 
+The core of the chatbot is following convolutional neural network(CNN) which applied on 9-layer deep learning. By compling with language packages(English, chatterbot-corpus) and emotion packages, the chatterbot owns its own logic of expressing, listening, and processing language information.
+
+I built this to memerize the days when I was young
 
 ## Technique 
 Model-View-ViewModel(MVVM)
 Observation
 Delegation
-Machine Learning/Deep Learning
+Machine Learning
 
 ## Todos
-1. Emoji package is developed by "google", and it could be 
+1. Emoji package is developed by "google", and it could be applied on image response (VGG-19 package)
 2. Code utilization is avaliable for populating Ui elements
 3. Chat pops could have a better UI
 4. More devices could be adjusted(by applying NotificaitonCenter)

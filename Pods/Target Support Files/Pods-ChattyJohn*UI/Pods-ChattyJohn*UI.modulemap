@@ -1,0 +1,6 @@
+framework module Pods_ChattyJohn_UI {
+  umbrella header "Pods-ChattyJohn*UI-umbrella.h"
+
+  export *
+  module * { export * }
+}

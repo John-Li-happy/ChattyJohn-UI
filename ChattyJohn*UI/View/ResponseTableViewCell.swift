@@ -15,6 +15,19 @@ class ResponseTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        uiSettings()
+    }
+    
+    private func uiSettings() {
+        // accessbility
+        chatMessageTextView.isAccessibilityElement = true
+        chatMessageTextView.accessibilityHint = "this is the message from John"
+        chatMessageTextView.accessibilityIdentifier = "this is label"
+        
+        thumbImageImageView.isAccessibilityElement = true
+        thumbImageImageView.accessibilityHint = "this is image, John"
+        
+        // image views
         thumbImageImageView.layer.cornerRadius = thumbImageImageView.frame.size.width / 2
         thumbImageImageView.layer.borderWidth = 2.0
         thumbImageImageView.layer.borderColor = UIColor.white.cgColor

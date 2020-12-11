@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		84DEA00AFB1787A418652291 /* Pods_ChattyJohn_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6A05114BEDC8FB4D268402 /* Pods_ChattyJohn_UI.framework */; };
 		F20DF30A2570B06A00B596F4 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20DF3092570B06A00B596F4 /* MessageTableViewCell.swift */; };
-		F24BDBE72571510100D359DC /* ResponseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24BDBE62571510100D359DC /* ResponseTableViewCell.swift */; };
+		F23C2EBA2571C5720084713A /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C2EB92571C5720084713A /* UIViewExt.swift */; };
 		F25D23B12571A50600A7E0B0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D23B02571A50600A7E0B0 /* ViewModel.swift */; };
 		F262293F256F54DE00730218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262293E256F54DE00730218 /* AppDelegate.swift */; };
 		F2622941256F54DE00730218 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2622940256F54DE00730218 /* SceneDelegate.swift */; };
@@ -17,6 +17,7 @@
 		F2622946256F54DE00730218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2622944256F54DE00730218 /* Main.storyboard */; };
 		F2622948256F54DF00730218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2622947256F54DF00730218 /* Assets.xcassets */; };
 		F262294B256F54DF00730218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2622949256F54DF00730218 /* LaunchScreen.storyboard */; };
+		F2D0E884257DDCBD00CE14BB /* ResponseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0E883257DDCBD00CE14BB /* ResponseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +25,7 @@
 		6D7EAA754F48FB264747B5FB /* Pods-ChattyJohn*UI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyJohn*UI.release.xcconfig"; path = "Target Support Files/Pods-ChattyJohn*UI/Pods-ChattyJohn*UI.release.xcconfig"; sourceTree = "<group>"; };
 		BC7710D55668F78CF086CA78 /* Pods-ChattyJohn*UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChattyJohn*UI.debug.xcconfig"; path = "Target Support Files/Pods-ChattyJohn*UI/Pods-ChattyJohn*UI.debug.xcconfig"; sourceTree = "<group>"; };
 		F20DF3092570B06A00B596F4 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
-		F24BDBE62571510100D359DC /* ResponseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTableViewCell.swift; sourceTree = "<group>"; };
+		F23C2EB92571C5720084713A /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		F25D23B02571A50600A7E0B0 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		F262293B256F54DE00730218 /* ChattyJohn*UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChattyJohn*UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F262293E256F54DE00730218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +35,7 @@
 		F2622947256F54DF00730218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F262294A256F54DF00730218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F262294C256F54DF00730218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D0E883257DDCBD00CE14BB /* ResponseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				F20DF3092570B06A00B596F4 /* MessageTableViewCell.swift */,
-				F24BDBE62571510100D359DC /* ResponseTableViewCell.swift */,
+				F2D0E883257DDCBD00CE14BB /* ResponseTableViewCell.swift */,
+				F23C2EB92571C5720084713A /* UIViewExt.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,10 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23C2EBA2571C5720084713A /* UIViewExt.swift in Sources */,
 				F2622943256F54DE00730218 /* ViewController.swift in Sources */,
+				F2D0E884257DDCBD00CE14BB /* ResponseTableViewCell.swift in Sources */,
 				F262293F256F54DE00730218 /* AppDelegate.swift in Sources */,
 				F20DF30A2570B06A00B596F4 /* MessageTableViewCell.swift in Sources */,
-				F24BDBE72571510100D359DC /* ResponseTableViewCell.swift in Sources */,
 				F25D23B12571A50600A7E0B0 /* ViewModel.swift in Sources */,
 				F2622941256F54DE00730218 /* SceneDelegate.swift in Sources */,
 			);

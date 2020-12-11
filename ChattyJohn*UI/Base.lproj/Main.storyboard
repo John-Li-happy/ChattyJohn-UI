@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="729"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageTableViewCell" rowHeight="62" id="AWH-B7-N4N" customClass="MessageTableViewCell" customModule="ChattyJohn_UI" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageTableViewCell" rowHeight="62" id="AWH-B7-N4N" customClass="MessageTableViewCell" customModule="ChattyJohn_UI" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AWH-B7-N4N" id="3sL-WP-UTe">
@@ -35,14 +35,14 @@
                                                     </constraints>
                                                 </imageView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5pO-nK-1fW">
-                                                    <rect key="frame" x="85" y="14.5" width="30" height="33"/>
+                                                    <rect key="frame" x="85" y="11.5" width="30" height="39"/>
                                                     <color key="backgroundColor" systemColor="systemRedColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="DcI-9y-9cK"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Zqn-dN-T45"/>
                                                     </constraints>
                                                     <color key="textColor" systemColor="labelColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -66,7 +66,7 @@
                                             <outlet property="thumbImageImageView" destination="Yb3-VG-V7f" id="LKy-4d-6OT"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResponseTableViewCell" rowHeight="65" id="FOF-h3-UFv" customClass="ResponseTableViewCell" customModule="ChattyJohn_UI" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResponseTableViewCell" rowHeight="65" id="FOF-h3-UFv" customClass="ResponseTableViewCell" customModule="ChattyJohn_UI" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="414" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FOF-h3-UFv" id="Hg0-Us-NZe">
@@ -106,16 +106,17 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="chatMessageHeight" destination="aER-4d-dni" id="iFa-In-y7h"/>
-                                            <outlet property="chatMessageTextView" destination="odw-wX-VdP" id="VNV-1Z-WzW"/>
-                                            <outlet property="chatMessageWidth" destination="Wvy-Rd-Brh" id="mrI-gh-epW"/>
-                                            <outlet property="thumbImageImageView" destination="3Sh-VB-WPC" id="6VI-Ka-8b0"/>
+                                            <outlet property="chatMessageHeight" destination="aER-4d-dni" id="lIo-RM-6w3"/>
+                                            <outlet property="chatMessageTextView" destination="odw-wX-VdP" id="TbF-tf-YI3"/>
+                                            <outlet property="chatMessageWidth" destination="Wvy-Rd-Brh" id="wuN-8I-D5d"/>
+                                            <outlet property="thumbImageImageView" destination="3Sh-VB-WPC" id="Qt2-6f-Z8G"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7tK-og-SuP">
                                 <rect key="frame" x="10" y="822" width="349" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="vLy-KW-oqh"/>
                                 </constraints>

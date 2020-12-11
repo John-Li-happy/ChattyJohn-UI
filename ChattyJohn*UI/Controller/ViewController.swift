@@ -6,13 +6,12 @@
 //
 
 import UIKit
-import MessageKit
 
 class ViewController: UIViewController {
 
     let viewModel = ViewModel()
     var currentStringCache = "hello"
-    var footerMessage = "John* is not active"
+    var footerMessage = "John* is currently active"
 
     @IBOutlet private weak var inputTextField: UITextField! {
         didSet {
@@ -32,6 +31,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         checkExistance()
         startResponser()
+        view.setbackGorund()
         let _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(checkNewMessage), userInfo: nil, repeats: true)
     }
 
@@ -106,6 +106,7 @@ extension ViewController: UITextFieldDelegate {
 
     @objc private func hideHandler() {
         view.endEditing(true)
+        inputTextField.resignFirstResponder()
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
